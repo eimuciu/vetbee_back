@@ -1,0 +1,48 @@
+GET http://localhost:8080/api/logs/1
+###
+
+POST http://127.0.0.1:3000/api/logs/createTable
+###
+
+GET  http://127.0.0.1:3000/api/logs/1
+=======
+
+
+GET http://localhost:8080/
+###
+GET http://localhost:8080/api/pets/
+
+###
+POST http://localhost:8080/api/pets
+Content-Type: application/json
+
+{
+    "name": "JonasABUDABIS",
+    "dob": "2003-05-15",
+    "clientEmail": "augintiniai@email.lt"
+}
+=======
+GET  http://127.0.0.1:3000/api/medications
+###
+POST  http://localhost:8080/api/logs/insert
+Content-Type: application/json
+
+{
+"pet_id":5,
+"description":"Medical records of pet",
+"status":"Sick"
+}
+
+###
+
+POST http://localhost:8080/api/prescriptions
+Content-Type: application/json
+
+{
+    "medicationId": 1, 
+    "petId": 5,
+    "comment": "get healthy"
+}
+
+### 
+GET http://localhost:5000/api/pets
